@@ -42,6 +42,7 @@ module.exports = {
               )
             } finally {
               console.log("hell ya, mongo succeed")
+              message.reply("Operation Succeeded")
             }
           })
     }

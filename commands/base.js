@@ -1,7 +1,10 @@
+const profileSchema = require('../schemas/profile-schema')
+const mongoose = require('mongoose')
+const mongo = require('../mongo.js')
 module.exports = {
     minArgs: 1,
     maxArgs: 1,
-    callback: ({ message, args }) => {
+    callback: async ({ message, args }) => {
         if(!(message.author.id == "518518142532845591" || message.author.id == "521115847801044993" || message.author.id == "309837382344245248")){
             message.reply("Fuck off you're not a cool guy")
             return
@@ -30,6 +33,7 @@ module.exports = {
               )
             } finally {
               console.log("hell ya, mongo succeed")
+              message.reply("Operation Succeeded")
             }
           })
     }
