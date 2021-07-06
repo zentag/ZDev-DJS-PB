@@ -8,7 +8,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             embed.setTitle("Help")
             embed.setColor("0099ff")
-            embed.addField("Presets", `**base\nevent\nrecruit\nsign`)
+            embed.addField("Presets", `**base\nevent\nrecruit\nsign**`)
             embed.setDescription(`These can making adding PB easier, and add an automatic reason\n**Format: ${prefix}<preset> <mention>**`)
             message.channel.send(embed)
         } else {
